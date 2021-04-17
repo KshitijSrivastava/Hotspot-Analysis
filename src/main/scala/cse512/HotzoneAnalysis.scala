@@ -30,6 +30,7 @@ object HotzoneAnalysis {
     joinDf.createOrReplaceTempView("joinResult")
 
     // YOU NEED TO CHANGE THIS PART
+    println(joinDf)
 
     return joinDf // YOU NEED TO CHANGE THIS PART
   }
