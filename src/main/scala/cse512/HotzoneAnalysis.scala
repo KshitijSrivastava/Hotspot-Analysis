@@ -30,9 +30,9 @@ object HotzoneAnalysis {
     joinDf.createOrReplaceTempView("joinResult")
 
     // YOU NEED TO CHANGE THIS PART
-    println(joinDf)
+    var output = joinDf.groupBy("rectangle").count().orderBy(asc("rectangle"))
 
-    return joinDf // YOU NEED TO CHANGE THIS PART
+    return output // YOU NEED TO CHANGE THIS PART
   }
 
 }
